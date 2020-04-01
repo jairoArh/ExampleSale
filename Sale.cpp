@@ -42,6 +42,16 @@ short int Sale::getAmount(){
     return Sale::amount;
 }
 
+double Sale::liquidationSale(){
+  //TODO Liquidar Venta   
+    return 0.0;
+}
+
+double Sale::calculateDiscount(){
+  //TODO Calcular Descuento     
+    return 0.0;
+}
+
 Sale::~Sale() {
 }
 
