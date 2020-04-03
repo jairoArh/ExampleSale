@@ -12,8 +12,12 @@
  */
 
 #include "Sale.hpp"
+#include <iostream>
 
 Sale::Sale() {
+    this->id = "";
+    Sale::cost = 0.0;
+    Sale::amount = 0;
 }
 
 Sale::Sale(std::string id, double cost, short int amount) {
@@ -53,5 +57,6 @@ double Sale::calculateDiscount(){
 }
 
 Sale::~Sale() {
+    std::cout<<"Eliminando Objeto "<<Sale::id<<std::endl;
 }
 
