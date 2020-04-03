@@ -28,6 +28,13 @@ int main(int argc, char** argv) {
     Sale* pant = new Sale("Pantalon",220000,1);  
     cout<<"Se vende "<<pant->getId()<<" El costo es "<<pant->getCost()<<" Se vendio "<<pant->getAmount()<<" Unidades"<<endl;
     
+    Sale* shert = new Sale();
+    
+    cout<<"Objeto "<<shert->getCost()<<endl;
+    
+    delete(pant);
+    delete(shert);
+    
     cout<<"********End*********"<<endl;
 
     return EXIT_SUCCESS;
