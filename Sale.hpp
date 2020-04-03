@@ -26,11 +26,14 @@ public:
     std::string getId();
     double getCost();
     short int getAmount();
+    double liquidationSale();
     virtual ~Sale();
 private:
     std::string id;
     double cost;
     short int amount;
+    
+    double calculateDiscount();
 
 };
 
